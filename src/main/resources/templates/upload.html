@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>Spring Boot File Upload / Download Rest API Example</title>
@@ -9,6 +9,7 @@
 <noscript>
     <h2>Sorry! Your browser doesn't support Javascript</h2>
 </noscript>
+<main>
 <div class="upload-container">
     <div class="upload-header">
         <h2>Spring Boot File Upload / Download Rest API Example</h2>
@@ -38,6 +39,8 @@
         </div>
     </div>
 </div>
+</main>
 <script src="/js/main.js" ></script>
+<div th:insert="blocks/footer :: footer"></div>
 </body>
 </html>
