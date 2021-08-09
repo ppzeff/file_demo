@@ -18,6 +18,11 @@ public class RedirectController {
         model.addAttribute("title", "Сраница загрузки");
         return "upload";
     }
+    @GetMapping("/firefighter")
+    public String firefighter(Model model) {
+        model.addAttribute("title", "Сраница пожарки");
+        return "firefighter";
+    }
 
     @GetMapping("/fire/{id}")
     public String workersDetails(@PathVariable(value = "id") long id, Model model) {
