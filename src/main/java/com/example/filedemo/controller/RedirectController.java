@@ -13,11 +13,24 @@ public class RedirectController {
         model.addAttribute("title", "Главная страница");
         return "home";
     }
+
     @GetMapping("/upload")
     public String upload(Model model) {
         model.addAttribute("title", "Сраница загрузки");
         return "upload";
     }
+
+    @GetMapping("/upload2")
+    public String upload2(Model model) {
+        model.addAttribute("title", "Сраница загрузки");
+        return "upload2";
+    }
+    @GetMapping("/audit")
+    public String audit(Model model) {
+        model.addAttribute("title", "Safety_Поведенческий аудит_new");
+        return "audit";
+    }
+
     @GetMapping("/firefighter")
     public String firefighter(Model model) {
         model.addAttribute("title", "Сраница пожарки");
